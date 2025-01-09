@@ -1,0 +1,189 @@
+
+    <div class></div>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+    <script src="assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/plugins/bootstrap-datatable/js/dataTables.buttons.min.js"></script>
+    <script src="assets/plugins/bootstrap-datatable/js/buttons.bootstrap4.min.js"></script>
+    <script src="assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
+    <script src="assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
+    <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/passive-events.js"></script>
+    <script>
+        $("#username1,#password1").on({
+            keydown: function(e) {
+                if (e.which === 32) return false;
+            },
+            change: function() {
+                this.value = this.value.replace(/\s/g, "");
+            }
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        $('.main-content .owl-carousel').owlCarousel({
+            stagePadding: 25,
+            loop: false,
+            autoplay: false,
+            margin: 15,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            navContainer: '.main-content .custom-nav',
+            responsive: {
+                0: {
+                    items: 4
+                },
+                600: {
+                    items: 4
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+    </script>
+    <script src="assets/js/lazysizes.src.js" async></script>
+    <script src="assets/js/lazyload.min.js" async></script>
+    <div class="progress-container-custom">
+        <div class="progress-bar-custom" id="progressbarcustom"></div>
+    </div>
+    <script>
+        window.addEventListener('scroll', myFunction);
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById('progressbarcustom').style.width = scrolled + '%';
+        }
+    </script>
+    <script>
+        $(function() {
+            $('.backtotop').each(function() {
+                var $this = $(this);
+                $(window).on('scroll', function() {
+                    $(this).scrollTop() >= 100 ? $this.fadeIn(250) : $this.fadeOut(250)
+                }), $this.click(function() {
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 500)
+                })
+            });
+        });
+    </script>
+    <div class="backtotop" title="Back to Top"> ↑ </div>
+    <script>
+        var delay = 700000;
+        var inittotal = 7795418075;
+        var djs = 71203854;
+        var jackpot = 0;
+        pull_jackpot();
+        var timer;
+    </script>
+    <script>
+        $(window).on('load', function() {
+            setTimeout(function() {
+                $('#exampleModal').modal({
+                    show: true,
+                    backdrop: 'static',
+                    keyboard: false
+                });
+            }, 3000);
+        });
+        $(document).ready(function() {
+            $("#exampleCheck1").change(function() {
+                if (this.checked == true) {
+                    $.ajax({
+                        url: "https://isoft.kincai77.fun/cdn-cgi/rum?",
+                        method: "POST",
+                        data: {
+                            id: 1,
+                            ipaddress: $('#ipaddress').val()
+                        },
+                        success: function(data) {}
+                    })
+                }
+            });
+        });
+    </script>
+    <script>
+        class Jackpot {
+            constructor(selector) {
+                this.selector = selector;
+                this.loop();
+            }
+            loop() {
+                let jackpots = document.querySelectorAll(this.selector);
+                jackpots.forEach((item) => {
+                    let jackpot = item.querySelector('.jackpot'),
+                        value = parseInt(jackpot.getAttribute(['data-jackpot'])),
+                        randomJackpotInt = this.randomInt(150, 650),
+                        randomIntervalInt = this.randomInt(1000, 2000),
+                        randomCentsInt = this.randomInt(10, 99);
+                    this.show(value, jackpot, randomJackpotInt, randomCentsInt);
+                    let interval = setInterval(() => {
+                        this.show(value, jackpot, randomJackpotInt, randomCentsInt);
+                        this.loop();
+                        clearInterval(interval);
+                    }, randomIntervalInt);
+                })
+            }
+            show(value, jackpot, randomJackpotInt, randomCentsInt) {
+                value += randomJackpotInt;
+                let transformed = this.transform(value);
+                jackpot.innerHTML = transformed + '.' + randomCentsInt;
+                jackpot.setAttribute('data-jackpot', transformed.replace(/\,/g, ''));
+            }
+            transform(value) {
+                return value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+            }
+            randomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            }
+        }(() => {
+            console.clear();
+            let jackpot = new Jackpot('.jackpot');
+        })()
+    </script>
+    <script>
+        (function() {
+            function c() {
+                var b = a.contentDocument || a.contentWindow.document;
+                if (b) {
+                    var d = b.createElement('script');
+                    d.innerHTML = "window.__CF$cv$params={r:'89d9cb6fdd9f9cad',t:'MTcyMDA0MDMxOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='cdn-cgi/challenge-platform/h/g/scripts/jsd/d2a97f6b6ec9/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    b.getElementsByTagName('head')[0].appendChild(d)
+                }
+            }
+            if (document.body) {
+                var a = document.createElement('iframe');
+                a.height = 1;
+                a.width = 1;
+                a.style.position = 'absolute';
+                a.style.top = 0;
+                a.style.left = 0;
+                a.style.border = 'none';
+                a.style.visibility = 'hidden';
+                document.body.appendChild(a);
+                if ('loading' !== document.readyState) c();
+                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+                else {
+                    var e = document.onreadystatechange || function() {};
+                    document.onreadystatechange = function(b) {
+                        e(b);
+                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
+                    }
+                }
+            }
+        })();
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"89d9cb6fdd9f9cad","version":"2024.4.1","r":1,"token":"2a9db119e5614a928b5a1a160c7f2c96","b":1}'
+        crossorigin="anonymous"></script>

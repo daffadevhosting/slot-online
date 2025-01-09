@@ -1,0 +1,516 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link href="{{ '/assets/vendor/bootstrap/dist/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/app-styled9e9.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/customd9e9.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style-maind9e9.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/animated9e9.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/seosecretidnblockadsd9e9.css' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/vendor/@sweetalert2/theme-bootstrap-4/bootstrap-4.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/vendor/@sweetalert2/theme-dark/dark.css' | relative_url }}">
+  <script src="{{ '/assets/js/jquery/jquery.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/jquery/jquery.countdown.js' | relative_url }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KotakAmal-4D">
+    <meta property="og:url" content="index.html">
+    <meta property="og:headline" content="KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online">
+    <meta property="og:title" content="KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online">
+    <meta property="og:description" content="Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.">
+    <meta property="og:image" content="assets/images/paneld9e9.webp?6.2.9">
+    <meta property="og:image:alt" content="KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online">
+    <meta property="og:rich_attachment" content="true">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="fb:app_id" content="1411872802675627">
+    <meta property="fb:pages" content="103417799098875">
+    <meta property="fb:profile_id" content="103417799098875">
+    <meta property="pinterest-rich-pin" content="true">
+    <meta property="article:author" content="KotakAmal-4D">
+    <meta name="og:image:width" content="1920">
+    <meta name="og:image:height" content="1080">
+    <meta name="twitter:title" content="KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online">
+    <meta name="twitter:url" content="index.html">
+    <meta name="twitter:description" content="Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.">
+    <meta name="twitter:site" content="index.html">
+    <meta name="twitter:image" content="assets/images/paneld9e9.webp?6.2.9">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:app:country" content="ID">
+    <meta name="twitter:app:name:iphone" content="KotakAmal-4D">
+    <meta name="twitter:app:name:ipad" content="KotakAmal-4D">
+    <meta name="twitter:app:name:googleplay" content="KotakAmal-4D">
+    <meta name="twitter:app:id:googleplay" content="kincai77.apk">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "#WebSite",
+            "url": "{{site.baseurl}}",
+            "name": "KotakAmal-4D",
+            "alternateName": "KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online",
+            "headline": "KotakAmal-4D",
+            "alternativeHeadline": "KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online",
+            "description": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter maxwin dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.",
+            "disambiguatingDescription": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.. KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online",
+            "abstract": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter maxwin dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.. KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online - KotakAmal-4D",
+            "keywords": ["kincai77", " hanzoslot", " scatterwin", " kincai77 pro", " slot gacor", " situs slot", " situs gacor"],
+            "genre": ["kincai77", " hanzoslot", " scatterwin", " kincai77 pro", " slot gacor", " situs slot", " situs gacor"],
+            "thumbnailUrl": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "#ImageWebSite",
+                "inLanguage": "ID",
+                "width": 1920,
+                "height": 1080,
+                "url": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+                "caption": "KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online"
+            },
+            "inLanguage": "ID",
+            "sameAs": ["https://www.facebook.com/username", "https://www.twitter.com/username", "https://www.instagram.com/username", "https://www.linkedin.com/company/username", "https://www.youtube.com/c/username"],
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://worldslot.kincai77.fun/search?keyword={query}",
+                "query-input": "required name=query"
+            },
+            "publisher": {
+                "@id": "#Organization"
+            },
+            "sponsor": {
+                "@id": "#Corporation"
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "#Organization",
+            "url": "{{site.baseurl}}",
+            "name": "KotakAmal-4D",
+            "description": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter maxwin dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.",
+            "sameAs": ["https://www.facebook.com/username", "https://www.twitter.com/username", "https://www.instagram.com/username", "https://www.linkedin.com/company/username", "https://www.youtube.com/c/username"],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "#LogoOrganization",
+                "inLanguage": "ID",
+                "width": 512,
+                "height": 512,
+                "url": "https://worldslot.kincai77.fun/upload/favicon.png?6.2.9",
+                "caption": "KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "@id": "#ImageOrganization",
+                "inLanguage": "ID",
+                "width": 1920,
+                "height": 1080,
+                "url": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+                "caption": "KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "@id": "#PostalAddressOrganization",
+                "streetAddress": "KotakAmal-4D, Daerah Khusus Ibukota Jakarta",
+                "addressLocality": "DKI Jakarta",
+                "addressRegion": "Jakarta Pusat",
+                "postalCode": "10110",
+                "addressCountry": "Indonesia"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": "KotakAmal-4D",
+                "jobTitle": "Owner",
+                "url": "{{site.baseurl}}",
+                "sameAs": ["https://www.facebook.com/username", "https://www.twitter.com/username", "https://www.instagram.com/username", "https://www.linkedin.com/company/username", "https://www.youtube.com/c/username"]
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.07",
+                "reviewCount": "10704"
+            },
+            "review": {
+                "@type": "Review",
+                "@id": "#ReviewOrganization",
+                "name": "Ulasan KotakAmal-4D",
+                "author": {
+                    "@type": "Person",
+                    "name": "KotakAmal-4D",
+                    "url": "{{site.baseurl}}",
+                    "sameAs": ["https://www.facebook.com/username", "https://www.twitter.com/username", "https://www.instagram.com/username", "https://www.linkedin.com/company/username", "https://www.youtube.com/c/username"]
+                },
+                "description": "Situs taruhan tepercaya di antara para pemain dan petaruh profesional",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "bestRating": "5",
+                    "ratingValue": "4.07",
+                    "worstRating": "0"
+                }
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Corporation",
+            "@id": "#Corporation",
+            "url": "{{site.baseurl}}",
+            "name": "KotakAmal-4D",
+            "alternateName": "KotakAmal-4D",
+            "description": "KotakAmal-4D adalah perusahaan yang memiliki spesialisasi dalam bidang game online di Indonesia.",
+            "disambiguatingDescription": "KotakAmal-4D adalah perusahaan yang memiliki spesialisasi dalam bidang game online di Indonesia. KotakAmal-4D saat ini berdiri sebagai perusahaan gaming dan memiliki berbagai platform online yang terintegrasi dengan provider games.",
+            "telephone": "6280000000000",
+            "sameAs": ["https://www.facebook.com/username", "https://www.twitter.com/username", "https://www.instagram.com/username", "https://www.linkedin.com/company/username", "https://www.youtube.com/c/username"],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "#LogoCorporation",
+                "inLanguage": "id-ID",
+                "width": 512,
+                "height": 512,
+                "url": "https://worldslot.kincai77.fun/upload/favicon.png?6.2.9",
+                "caption": "KotakAmal-4D"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "@id": "#ImageCorporation",
+                "inLanguage": "id-ID",
+                "width": 1920,
+                "height": 1080,
+                "url": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+                "caption": "KotakAmal-4D"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "@id": "#PostalAddressCorporation",
+                "streetAddress": "KotakAmal-4D, Daerah Khusus Ibukota Jakarta",
+                "addressLocality": "DKI Jakarta",
+                "addressRegion": "Jakarta Pusat",
+                "postalCode": "10110",
+                "addressCountry": "Indonesia"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "401"
+            },
+            "review": {
+                "@type": "Review",
+                "@id": "#ReviewCorporation",
+                "name": "Reviewer",
+                "author": {
+                    "@type": "Person",
+                    "name": "KotakAmal-4D",
+                    "url": "{{site.baseurl}}",
+                    "sameAs": ["https://www.facebook.com/username", "https://www.twitter.com/username", "https://www.instagram.com/username", "https://www.linkedin.com/company/username", "https://www.youtube.com/c/username"]
+                },
+                "description": "Slot RTP Tertinggi, Casino Live dan Togel Online",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "bestRating": "5",
+                    "ratingValue": "5",
+                    "worstRating": "0"
+                }
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Game",
+            "@id": "#Game",
+            "url": "{{site.baseurl}}",
+            "name": "KotakAmal-4D",
+            "alternateName": "KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online",
+            "description": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter maxwin dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.",
+            "disambiguatingDescription": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.. KotakAmal-4D",
+            "keywords": ["kincai77", " hanzoslot", " scatterwin", " kincai77 pro", " slot gacor", " situs slot", " situs gacor"],
+            "thumbnailUrl": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "#Image",
+                "inLanguage": "id",
+                "width": 1920,
+                "height": 1080,
+                "url": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+                "caption": "KotakAmal-4D"
+            },
+            "sameAs": ["https://www.facebook.com/username", "https://www.twitter.com/username", "https://www.instagram.com/username", "https://www.linkedin.com/company/username", "https://www.youtube.com/c/username"],
+            "potentialAction": {
+                "@type": "ReadAction",
+                "@id": "ReadActionSoftware",
+                "target": {
+                    "@type": "EntryPoint",
+                    "@id": "EntryPointSoftware",
+                    "actionPlatform": ["https://schema.org/DesktopWebPlatform", "https://schema.org/IOSPlatform", "https://schema.org/AndroidPlatform"]
+                }
+            },
+            "mainEntityOfPage": "false",
+            "identifier": "KNC77",
+            "AggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "10704"
+            },
+            "review": [{
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "KotakAmal-4D",
+                    "url": "{{site.baseurl}}"
+                },
+                "description": "Review KotakAmal-4D",
+                "reviewBody": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter maxwin dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.",
+                "name": "KotakAmal-4D",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "bestRating": "5",
+                    "ratingValue": "5",
+                    "worstRating": "0"
+                }
+            }],
+            "offers": {
+                "@type": "AggregateOffer",
+                "lowPrice": "1070",
+                "highPrice": "202400",
+                "price": "20240",
+                "priceCurrency": "IDR",
+                "availability": " https://schema.org/InStock ",
+                "itemCondition": "https://schema.org/NewCondition",
+                "priceValidUntil": "2024-12-12",
+                "offerCount": "107"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "@id": "#SoftwareApplication",
+            "url": "{{site.baseurl}}",
+            "name": "KotakAmal-4D",
+            "alternateName": "KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online",
+            "description": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter maxwin dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.",
+            "disambiguatingDescription": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.. KotakAmal-4D",
+            "keywords": ["kincai77", " hanzoslot", " scatterwin", " kincai77 pro", " slot gacor", " situs slot", " situs gacor"],
+            "operatingSystem": ["Chrome", "Windows", "Android", "iOS", "OSX", "Java", "Symbian"],
+            "thumbnailUrl": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "#Image",
+                "inLanguage": "id",
+                "width": 1920,
+                "height": 1080,
+                "url": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+                "caption": "KotakAmal-4D"
+            },
+            "sameAs": ["https://www.facebook.com/username", "https://www.twitter.com/username", "https://www.instagram.com/username", "https://www.linkedin.com/company/username", "https://www.youtube.com/c/username"],
+            "potentialAction": {
+                "@type": "ReadAction",
+                "@id": "ReadActionSoftware",
+                "target": {
+                    "@type": "EntryPoint",
+                    "@id": "EntryPointSoftware",
+                    "actionPlatform": ["https://schema.org/DesktopWebPlatform", "https://schema.org/IOSPlatform", "https://schema.org/AndroidPlatform"]
+                }
+            },
+            "mainEntityOfPage": "false",
+            "identifier": "KNC77",
+            "AggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "10704"
+            },
+            "review": [{
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "KotakAmal-4D",
+                    "url": "{{site.baseurl}}"
+                },
+                "description": "Review KotakAmal-4D",
+                "reviewBody": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter maxwin dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.",
+                "name": "KotakAmal-4D",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "bestRating": "5",
+                    "ratingValue": "5",
+                    "worstRating": "0"
+                }
+            }],
+            "offers": {
+                "@type": "AggregateOffer",
+                "lowPrice": "1070",
+                "highPrice": "202400",
+                "price": "20240",
+                "priceCurrency": "IDR",
+                "availability": " https://schema.org/InStock ",
+                "itemCondition": "https://schema.org/NewCondition",
+                "priceValidUntil": "2024-12-12",
+                "offerCount": "107"
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "@id": "#WebApplication",
+            "url": "{{site.baseurl}}",
+            "name": "KotakAmal-4D",
+            "alternateName": "KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online",
+            "description": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.",
+            "disambiguatingDescription": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.. KotakAmal-4D",
+            "keywords": ["kincai77", " hanzoslot", " scatterwin", " kincai77 pro", " slot gacor", " situs slot", " situs gacor"],
+            "operatingSystem": ["Chrome", "Windows", "Android", "iOS", "OSX", "Java", "Symbian"],
+            "thumbnailUrl": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "#Image",
+                "inLanguage": "id",
+                "width": 1920,
+                "height": 1080,
+                "url": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+                "caption": "KotakAmal-4D"
+            },
+            "sameAs": ["https://www.facebook.com/username", "https://www.twitter.com/username", "https://www.instagram.com/username", "https://www.linkedin.com/company/username", "https://www.youtube.com/c/username"],
+            "potentialAction": {
+                "@type": "ReadAction",
+                "@id": "ReadActionSoftware",
+                "target": {
+                    "@type": "EntryPoint",
+                    "@id": "EntryPointSoftware",
+                    "actionPlatform": ["https://schema.org/DesktopWebPlatform", "https://schema.org/IOSPlatform", "https://schema.org/AndroidPlatform"]
+                }
+            },
+            "isPartOf": {
+                "@id": "#SoftwareApplication"
+            },
+            "mainEntityOfPage": "true",
+            "identifier": "KNC77",
+            "AggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "10704"
+            },
+            "review": [{
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "KotakAmal-4D",
+                    "url": "{{site.baseurl}}"
+                },
+                "description": "Review KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online",
+                "reviewBody": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter maxwin dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.",
+                "name": "KotakAmal-4D",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "bestRating": "5",
+                    "ratingValue": "5",
+                    "worstRating": "0"
+                }
+            }],
+            "offers": {
+                "@type": "AggregateOffer",
+                "lowPrice": "1070",
+                "highPrice": "202400",
+                "price": "20240",
+                "priceCurrency": "IDR",
+                "availability": " https://schema.org/InStock ",
+                "itemCondition": "https://schema.org/NewCondition",
+                "priceValidUntil": "2024-12-12",
+                "offerCount": "107"
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "@id": "#ImageObject",
+            "url": "{{site.baseurl}}",
+            "name": "KotakAmal-4D",
+            "alternateName": "KotakAmal-4D - Slot RTP Tertinggi, Casino Live dan Togel Online",
+            "headline": "KotakAmal-4D",
+            "description": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter maxwin dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.",
+            "disambiguatingDescription": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.. KotakAmal-4D",
+            "abstract": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.. KotakAmal-4D",
+            "keywords": ["kincai77", " hanzoslot", " scatterwin", " kincai77 pro", " slot gacor", " situs slot", " situs gacor"],
+            "genre": ["kincai77", " hanzoslot", " scatterwin", " kincai77 pro", " slot gacor", " situs slot", " situs gacor"],
+            "caption": "KotakAmal-4D",
+            "contentUrl": "https://worldslot.kincai77.fun/assets/images/panel.webp",
+            "inLanguage": "ID",
+            "license": "https://worldslot.kincai77.fun/page/ketentuan",
+            "acquireLicensePage": "{{site.baseurl}}",
+            "creditText": "KotakAmal-4D",
+            "creator": {
+                "@type": "Person",
+                "name": "KotakAmal-4D",
+                "url": "{{site.baseurl}}",
+                "sameAs": ["https://www.facebook.com/username", "https://www.twitter.com/username", "https://www.instagram.com/username", "https://www.linkedin.com/company/username", "https://www.youtube.com/c/username"]
+            },
+            "copyrightNotice": "KotakAmal-4D",
+            "isBasedOnUrl": "{{site.baseurl}}"
+        }
+    </script>
+    <meta name="author" content="KotakAmal-4D">
+    <meta name="publisher" content="KotakAmal-4D">
+    <meta name="publisher" content="KotakAmal-4D">
+    <link rel="alternate" href="index.html" hreflang="ID">
+    <link rel="alternate" href="index.html" hreflang="x-default">
+    <meta content="ID" name="geo.region">
+    <meta content="ID" name="geo.country">
+    <meta content="ID" name="geo.placename">
+    <meta content="x;x" name="geo.position">
+    <meta content="x,x" name="ICBM">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="start_url" content="/">
+    <meta name="application-name" content="KotakAmal-4D">
+    <meta name="apple-mobile-web-app-title" content="KotakAmal-4D">
+    <meta name="msapplication-tooltip" content="KotakAmal-4D">
+    <meta name="theme-color" content="#0B7DDA">
+    <meta name="background_color" content="#FFFFFF">
+    <meta name="msapplication-navbutton-color" content="#0B7DDA">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0B7DDA">
+    <meta name="mssmarttagspreventparsing" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="msapplication-TileImage" content="https://worldslot.kincai77.fun/assets/images/manifest/144.png">
+    <link rel="apple-touch-icon" href="assets/images/manifest/180.png">
+    <link href="http://fonts.gstatic.com/" rel="preconnect dns-prefetch" crossorigin>
+    <link href="http://ajax.googleapis.com/" rel="dns-prefetch">
+    <link href="http://fonts.googleapis.com/" rel="preconnect dns-prefetch">
+    <link href="http://www.google-analytics.com/" rel="dns-prefetch">
+    <link href="http://www.googletagservices.com/" rel="dns-prefetch">
+    <link href="http://partner.googleadservices.com/" rel="dns-prefetch">
+    <link href="http://www.google.com/" rel="preconnect dns-prefetch">
+    <link href="http://www.youtube.com/" rel="preconnect dns-prefetch">
+    <link href="http://www.recaptcha.net/" rel="preconnect dns-prefetch">
+    <link href="http://www.gstatic.com/" rel="preconnect dns-prefetch">
+    <link href="http://www.googletagmanager.com/" rel="preconnect dns-prefetch">
+    <link href="http://ajax.cloudflare.com/" rel="preconnect dns-prefetch">
+    <link href="http://cdn.jsdelivr.net/" rel="preconnect dns-prefetch">
+    <link href="http://connect.facebook.net/" rel="preconnect dns-prefetch">
+    <link href="http://pagead2.googlesyndication.com/" rel="preconnect dns-prefetch">
+    <link href="http://googleads.g.doubleclick.net/" rel="preconnect dns-prefetch">
+    <link href="http://ad.doubleclick.net/" rel="preconnect dns-prefetch">
+    <link href="http://static.doubleclick.net/" rel="preconnect dns-prefetch">
+    <link href="http://tpc.googlesyndication.com/" rel="preconnect dns-prefetch">
+    <link href="http://adservice.google.com/" rel="preconnect dns-prefetch">
+    <link href="http://static.cloudflareinsights.com/" rel="preconnect dns-prefetch">
+
+  {% feed_meta %}
+</head>

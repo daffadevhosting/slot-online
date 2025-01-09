@@ -1,0 +1,29 @@
+{
+  "name": "kotakamal-slot",
+  "version": "1.0.1",
+  "description": "Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slot-gacor",
+    "maxwin",
+    "jackpot"
+  ],
+  "author": "unanglastname",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.83.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@sweetalert2/theme-bootstrap-4": "^5.0.26",
+    "@sweetalert2/theme-dark": "^5.0.26",
+    "sweetalert2": "^11.15.10"
+  }
+}

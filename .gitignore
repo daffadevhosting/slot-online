@@ -1,0 +1,8 @@
+_site
+_styles
+.sass-cache
+.jekyll-metadata
+.DS_Store
+node_modules
+Gemfile.lock
+package-lock.json

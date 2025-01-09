@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: KotakAmal-4D
+description: > # this means to ignore newlines until "baseurl:"
+  Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "/" # the base hostname & protocol for your site
+
+# Markdown settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  add_charset: true
+  sass_dir: _styles
+  style: :compressed
+
+# Build settings
+exclude:
+  - package-lock.json
+  - Gemfile.lock
+  - README.md
+  - CNAME
+  - _styles
+  - node_modules
+
+# Plugin settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Google Auth
+
+apiKey: "AIzaSyBzZ0Eejslus09Anpe6TE0GvZbM5TVXowk"
+authDomain: "kotakamal-slot.firebaseapp.com"
+projectId: "kotakamal-slot"
+storageBucket: "kotakamal-slot.firebasestorage.app"
+messagingSenderId: "557715051384"
+appId: "1:557715051384:web:a0b7320541889f2e376e8d"
+measurementId: "G-CE5B71D5D9"

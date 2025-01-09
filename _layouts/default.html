@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'id-ID' }}" data-bs-theme="dark">
+
+  {% include head.html %}
+
+  <body>
+	{% include headers.html %}
+    <main class="main" aria-label="Content">
+      <div class="container">
+      {{ content }}
+	  </div>
+    </main>
+	{% include login.html %}
+	
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="{{ '/assets/js/login.js' | relative_url }}" type="module"></script>
+
+<script src="{{ '/assets/js/passive-events.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+<script src="{{ '/assets/vendor/bootstrap/dist/js/bootstrap.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/vendor/bootstrap/@popperjs/core/dist/umd/popper.min.js' | relative_url }}"></script>
+		{% include script_js.html %}
+  </body>
+
+</html>

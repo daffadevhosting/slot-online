@@ -1,0 +1,108 @@
+<div class="modal fade" id="loginForm" aria-hidden="true" aria-labelledby="loginFormLabel" tabindex="-1" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginFormLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body login">
+        <form action="#">
+          <div class="mb-3">
+            <input type="text" class="form-control" id='inUsr' placeholder="E-Mail Terdaftar">
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="inPass" placeholder="Password">
+          </div>
+          <div class="d-grid gap-2">
+        <input type="button" class="btn loginbtn btn-primary" value="Login">
+        <span class="signup">
+          <button type="button" class="btn btn-dark btn-sm" id="forgotLabel" data-bs-target="#forgotForm" data-bs-toggle="modal">Lupa password?</button>
+        </span>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+	  Belum Punya Akun? 
+        <button class="btn btn-outline-success btn-sm" data-bs-target="#signupForm" data-bs-toggle="modal">Daftar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="forgotForm" aria-hidden="true" aria-labelledby="forgotFormLabel" tabindex="-1" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="forgotFormLabel">Lupa Password</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    <div class="registration form">
+      <form action="#">
+          <div class="mb-3">
+        <input type="text" id='forgotinp' class="form-control" placeholder="Masukan email Terdaftar">
+          </div>
+          <div class="d-grid gap-2">
+        <input type="button" class="btn forgotbtn btn btn-outline-warning" value="Submit">
+          </div>
+      </form>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-sm" data-bs-target="#loginForm" data-bs-toggle="modal">Kembali</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="signupForm" aria-hidden="true" aria-labelledby="signupFormLabel" tabindex="-1" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupFormLabel">Registrasi</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    <div class="registration form">
+      <form action="#">
+          <div class="mb-3">
+        <input type="text" class="form-control" id='username' placeholder="Buat Username">
+          </div>
+          <div class="mb-3">
+        <input type="email" class="form-control" id='email' placeholder="Masukan E-mail">
+          </div>
+          <div class="mb-3">
+        <input type="password" class="form-control" id='password' placeholder="Buat password">
+          </div>
+          <div class="mb-3">
+        <input type="number" class="form-control" id='phone' placeholder="Nomor WA">
+          </div>
+          <div class="mb-3">
+		<label for="bank" class="form-label text-white">Pilih Bank Pembayaran</label>
+        <select class="form-select" id='bank' aria-label="Default pilih bank">
+			  <option selected>BCA</option>
+			  <option value="BRI">BRI</option>
+			  <option value="BNI">BNI</option>
+			  <option value="MANDIRI">MANDIRI</option>
+			  <option value="DANA">DANA</option>
+			  <option value="LINKAJA">LINKAJA</option>
+			  <option value="OVO">OVO</option>
+			  <option value="GOPAY">GOPAY</option>
+		</select>
+          </div>
+          <div class="mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Nama Lengkap">
+          </div>
+          <div class="mb-3">
+        <input type="number" class="form-control" id='norek' placeholder="Nomor Rekening">
+		</div>
+          <div class="d-grid gap-2">
+        <input type="button" class="btn signupbtn btn-primary" value="Signup">
+		</div>
+      </form>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-sm" data-bs-target="#loginForm" data-bs-toggle="modal">Kembali</button>
+      </div>
+    </div>
+  </div>
+</div>
