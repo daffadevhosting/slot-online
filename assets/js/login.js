@@ -90,7 +90,7 @@ loginBtn.addEventListener('click', () => {
       const user = userCredential.user;
       if (user.emailVerified) {
         console.log('User is signed in with a verified email.');
-        location.href = "home.html";
+        location.href = "home";
       } else {
    Swal.fire({
 				  icon: 'error',

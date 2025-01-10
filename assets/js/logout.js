@@ -5,10 +5,18 @@ const signoutBtn = document.querySelector('#signoutbtn');
 signoutBtn.addEventListener('click', () => {
   auth.signOut()
     .then(() => {
-      console.log('User signed out successfully');
-      location.href = "index.html";
+   Swal.fire({
+			text: 'Logout Berhasil, yoooo...!!!',
+			icon: 'info',
+			showConfirmButton: false,
+			   });
+      location.href = "/";
     })
     .catch((error) => {
-      alert('Error signing out: ', error);
+   Swal.fire({
+			text: 'Error signing out: ', error,
+			icon: 'warning',
+			confirmButtonText: 'Sue blog ah'
+			   });
     });
 });
