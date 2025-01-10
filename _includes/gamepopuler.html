@@ -4,60 +4,20 @@
             <h2>Game Slot Terpopuler</h2>
         </legend>
         <div class="row" style="justify-content: center;">
+{% for item in site.data.slot_populer %}
             <div class="col-sm-2 col-4 hoverimg text-center pt-0 p-2">
-                <div class="game-item"> <img data-sizes="auto" data-src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs20fruitsw.png" src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs20fruitsw.png" onerror="this.onerror=null; this.src='https://placehold.co/196x140/111111/ffffff/webp/?text=Sweet+Bonanza&amp;font=Noto%20Sans'"
-                        class="shadow gamertpimg lazyautosizes lazyloaded" alt="Sweet Bonanza" sizes="202px">
+                <div class="game-item">
+				<a href="{{item.url}}" target="blank">
+					<img data-sizes="auto" data-src="{{item.img}}" src="{{item.img}}" onerror="this.onerror=null; this.src='https://placehold.co/196x140/111111/ffffff/webp/?text=Sweet+Bonanza&amp;font=Noto%20Sans'"
+                        class="shadow gamertpimg lazyautosizes lazyloaded" alt="{{item.title}}" sizes="202px">
                     <div class="progress text-center gamertpimgtitle">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" style="width: 83%" aria-label="progresbar-83">83%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-{{item.color}}" role="progressbar" aria-valuenow="{{item.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{item.progress}}%" aria-label="progresbar-{{item.progress}}">{{item.progress}}%</div>
                     </div>
-                    <p class="mt-2 d-none d-sm-block">Sweet Bonanza</p>
+                    <p class="mt-2 d-none d-sm-block">{{item.title}}</p>
+				</a>
                 </div>
             </div>
-            <div class="col-sm-2 col-4 hoverimg text-center pt-0 p-2">
-                <div class="game-item"> <img data-sizes="auto" data-src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs20midas.png" src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs20midas.png" onerror="this.onerror=null; this.src='https://placehold.co/196x140/111111/ffffff/webp/?text=The+Hand+of+Midas&amp;font=Noto%20Sans'"
-                        class="shadow gamertpimg lazyautosizes lazyloaded" alt="The Hand of Midas" sizes="202px">
-                    <div class="progress text-center gamertpimgtitle">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 73%" aria-label="progresbar-73">73%</div>
-                    </div>
-                    <p class="mt-2 d-none d-sm-block">The Hand of Midas</p> 
-                </div>
-            </div>
-            <div class="col-sm-2 col-4 hoverimg text-center pt-0 p-2">
-                <div class="game-item"> <img data-sizes="auto" data-src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs20starlight.png" src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs20starlight.png" onerror="this.onerror=null; this.src='https://placehold.co/196x140/111111/ffffff/webp/?text=Starlight+Princess&amp;font=Noto%20Sans'"
-                        class="shadow gamertpimg lazyautosizes lazyloaded" alt="Starlight Princess" sizes="202px">
-                    <div class="progress text-center gamertpimgtitle">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" aria-label="progresbar-60">60%</div>
-                    </div>
-                    <p class="mt-2 d-none d-sm-block">Starlight Princess</p>
-                </div>
-            </div>
-            <div class="col-sm-2 col-4 hoverimg text-center pt-0 p-2">
-                <div class="game-item"> <img data-sizes="auto" data-src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs40wildwest.png" src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs40wildwest.png" onerror="this.onerror=null; this.src='https://placehold.co/196x140/111111/ffffff/webp/?text=Wild+West+Gold&amp;font=Noto%20Sans'"
-                        class="shadow gamertpimg lazyautosizes lazyloaded" alt="Wild West Gold" sizes="202px">
-                    <div class="progress text-center gamertpimgtitle">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100" style="width: 71%" aria-label="progresbar-71">71%</div>
-                    </div>
-                    <p class="mt-2 d-none d-sm-block">Wild West Gold</p> 
-                </div>
-            </div>
-            <div class="col-sm-2 col-4 hoverimg text-center pt-0 p-2">
-                <div class="game-item"> <img data-sizes="auto" data-src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs20olympgate.png" src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs20olympgate.png" onerror="this.onerror=null; this.src='https://placehold.co/196x140/111111/ffffff/webp/?text=Gates+of+Olympus&amp;font=Noto%20Sans'"
-                        class="shadow gamertpimg lazyautosizes lazyloaded" alt="Gates of Olympus" sizes="202px">
-                    <div class="progress text-center gamertpimgtitle">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" style="width: 84%" aria-label="progresbar-84">84%</div>
-                    </div>
-                    <p class="mt-2 d-none d-sm-block">Gates of Olympus</p>
-                </div>
-            </div>
-            <div class="col-sm-2 col-4 hoverimg text-center pt-0 p-2">
-                <div class="game-item"> <img data-sizes="auto" data-src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs20sbxmas.png" src="https://worldslot.kincai77.fun/upload/game_pic/pragmaticplay/vs20sbxmas.png" onerror="this.onerror=null; this.src='https://placehold.co/196x140/111111/ffffff/webp/?text=Sweet+Bonanza+Xmas&amp;font=Noto%20Sans'"
-                        class="shadow gamertpimg lazyautosizes lazyloaded" alt="Sweet Bonanza Xmas" sizes="202px">
-                    <div class="progress text-center gamertpimgtitle">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%" aria-label="progresbar-66">66%</div>
-                    </div>
-                    <p class="mt-2 d-none d-sm-block">Sweet Bonanza Xmas</p>
-                </div>
-            </div>
+{% endfor %}
         </div>
     </fieldset>
 </div>
