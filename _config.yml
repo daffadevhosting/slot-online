@@ -8,9 +8,9 @@
 # Site settings
 title: KotakAmal-4D
 description: > # this means to ignore newlines until "baseurl:"
-  Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter max win dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.
+  Situs slot KotakAmal-4D memudahkan pemain mendapatkan scatter maxwin dan peluang jackpot dengan RTP tertinggi. KotakAmal-4D terintegrasi dengan berbagai provider resmi untuk game slot, casino, togel, sports, egames dan fishing. Kami juga membagikan bonus new member, komisi referral, cashback deposit dan bonus rolling mingguan.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "/" # the base hostname & protocol for your site
+url: "kotakamal4d.vercel.app" # the base hostname & protocol for your site
 
 # Markdown settings
 markdown: kramdown

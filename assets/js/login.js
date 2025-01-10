@@ -13,19 +13,19 @@ anchors.forEach(anchor => {
     const id = anchor.id;
     switch(id){
     case 'loginLabel':
-        signupForm.style.display = 'none';
-        loginForm.style.display = 'block';
-        forgotForm.style.display = 'none';
+        signupFormLabel.style.display = 'none';
+        loginFormLabel.style.display = 'block';
+        forgotFormLabel.style.display = 'none';
         break;
       case 'signupLabel':
-        signupForm.style.display = 'block';
-        loginForm.style.display = 'none';
-        forgotForm.style.display = 'none';
+        signupFormLabel.style.display = 'block';
+        loginFormLabel.style.display = 'none';
+        forgotFormLabel.style.display = 'none';
         break;
       case 'forgotLabel':
-        signupForm.style.display = 'none';
-        loginForm.style.display = 'none';
-        forgotForm.style.display = 'block';
+        signupFormLabel.style.display = 'none';
+        loginFormLabel.style.display = 'none';
+        forgotFormLabel.style.display = 'block';
         break;
     }
   });
@@ -68,9 +68,9 @@ signupBtn.addEventListener('click', () => {
 		  bank: bank,
 		  norek: norek,
       })
-        signupForm.style.display = 'none';
-        loginForm.style.display = 'block';
-        forgotForm.style.display = 'none';
+        signupFormLabel.style.display = 'none';
+        loginFormLabel.style.display = 'block';
+        forgotFormLabel.style.display = 'none';
     })
     .catch((error) => {
    Swal.fire({
@@ -119,9 +119,9 @@ forgotBtn.addEventListener('click', () => {
 				  icon: 'info',
 				  confirmButtonText: 'Sip deh'
 			   });
-        signupForm.style.display = 'none';
-        loginForm.style.display = 'block';
-        forgotForm.style.display = 'none';
+        signupFormLabel.style.display = 'none';
+        loginFormLabel.style.display = 'block';
+        forgotFormLabel.style.display = 'none';
     })
     .catch((error) => {
    Swal.fire({
